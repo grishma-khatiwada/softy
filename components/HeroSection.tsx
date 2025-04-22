@@ -35,7 +35,7 @@ export function HeroSection() {
             {heroImages.map((image, index) => (
               <CarouselItem key={index}>
                 <div>
-                  <Card className="rounded-none shadow-none border-none">
+                  <Card className="mt-16  rounded-none shadow-none border-none">
                     <CardContent className="flex aspect-video items-center justify-center p-0">
                       <Image
                         src={image}

@@ -12,10 +12,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import category1 from "../public/diaper.webp"
-import category2 from "../public/wipes.jpeg"
-import category3 from "../public/sanitary.jpeg"
-import category4 from "../public/tissue.png"
+import category1 from "../public/category image/img1.png"
+import category2 from "../public/category image/img2.png"
+import category3 from "../public/category image/image.png"
+import category4 from "../public/category image/img4.png"
 
 const categories = [
   { id: 1, image: category1, title: "Diaper", link: "/categories/diaper" },
@@ -23,18 +23,11 @@ const categories = [
   { id: 3, image: category3, title: "Sanitary Napkins", link: "/categories/sanitary-napkins" },
   { id: 4, image: category4, title: "Tissue Papers", link: "/categories/tissue-papers" },
 ]
-
-export function ProductCategories() {
+export function SingleCategory() {
   return (
-    <section className="py-12 px-2 md:px-6 lg:px-12">
-      <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-2 text-[#b94e9c]">Explore Our Categories</h2>
-        <p className="text-lg text-black-700 max-w-2xl mx-auto">
-          Discover the wide range of products we offer for your personal and professional hygiene needs.
-        </p>
-      </div>
-
-      <div className="relative w-full max-w-7xl mx-auto">
+    <section className=" mt-[-30] py-12 px-2 md:px-6 lg:px-12">
+    
+    <div className="relative w-full max-w-7xl mx-auto">
         <Carousel opts={{ align: "center" }}>
           <CarouselContent>
             {categories.map((category) => (
@@ -58,12 +51,12 @@ export function ProductCategories() {
                     </div>
                     <div className="text-left mt-auto">
                       <CardContent className="p-0">
-                        <h3 className="text-xl font-semibold mb-2 transition-all duration-300 group-hover:translate-x-2 group-hover:scale-95">
+                        <h3 className="text-md font-semibold mb-2 transition-all duration-300 group-hover:translate-x-2 group-hover:scale-95">
                           {category.title}
                         </h3>
                         <Link
                           href={category.link}
-                          className="text-sm text-purple-700 hover:underline transition-all duration-300 inline-block group-hover:translate-x-1.5"
+                          className="text-sm text-purple-700 hover:underline transition-all duration-300 inline-block "
                         >
                           View Category <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </Link>
@@ -75,8 +68,8 @@ export function ProductCategories() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="absolute left-1 top-1/2 -translate-y-1/2 z-10 text-purple-600" />
-          <CarouselNext className="absolute right-1 top-1/2 -translate-y-1/2 z-10 text-purple-600" />
+          <CarouselPrevious className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-purple-600 hover:bg-purple-700 text-black rounded-full p-2 shadow-md" />
+          <CarouselNext className="solute right-1 top-1/2 -translate-y-1/2 z-10 bg-purple-600 hover:bg-purple-700 text-black rounded-full p-2 shadow-md" />
         </Carousel>
       </div>
     </section>

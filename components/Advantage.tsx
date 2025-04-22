@@ -49,9 +49,13 @@ const features = [
 
 export default function SoftyAdvantageSection() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-16">
+    <div>
+    <hr className="mt-10 border-t-2 border-purple-200" />
+
+ <section className="py-16 px-4 sm:px-6 lg:px-16">
+      
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-800">
+        <h2 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-800">
           Discover the Softy Hygiene Advantage
         </h2>
         <p className="text-lg text-gray-700 mt-2">
@@ -73,6 +77,8 @@ export default function SoftyAdvantageSection() {
           </div>
         ))}
       </div>
-    </section>
+    </section>    
+    </div>
+   
   )
 }
