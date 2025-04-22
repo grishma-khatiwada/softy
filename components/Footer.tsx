@@ -166,7 +166,7 @@ export default function FooterSection() {
       
                 <div className="flex md:flex-row flex-col gap-4 items-center justify-between mt-12">
                     <p className=" text-white text-xs">© 2024 softy hygienic. All rights reserved.</p>
-                    <p className=" text-white text-xs">Designed and Developed by @Grishma</p>
+                    <p className=" text-white text-xs">Designed and Developed by @Grishma Khatiwada</p>
                 </div>
 
 
