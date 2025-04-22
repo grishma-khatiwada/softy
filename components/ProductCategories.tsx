@@ -28,7 +28,7 @@ export function ProductCategories() {
   return (
     <section className="py-12 px-2 md:px-6 lg:px-12">
       <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-5xl font-bold mb-2 text-[#b94e9c]">Explore Our Categories</h2>
+        <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-2 text-[#b94e9c]">Explore Our Categories</h2>
         <p className="text-lg text-black-700 max-w-2xl mx-auto">
           Discover the wide range of products we offer for your personal and professional hygiene needs.
         </p>
