@@ -17,6 +17,15 @@ import hero3 from "../public/hero-slide-3.webp"
 
 export function HeroSection() {
   const heroImages = [hero1, hero2, hero3]
+  const nextRef = React.useRef<HTMLButtonElement>(null)
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      nextRef.current?.click()
+    }, 4000) 
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <section className="w-full h-screen bg-gray-100 flex items-center justify-center mt-0 pt-0">
@@ -32,7 +41,7 @@ export function HeroSection() {
                         src={image}
                         alt={`Slide ${index + 1}`}
                         width={1900}
-                        height={900}
+                        height={600}
                         className="w-full h-full object-cover"
                         priority={index === 0}
                       />
@@ -43,9 +52,12 @@ export function HeroSection() {
             ))}
           </CarouselContent>
 
-          {/* Arrows positioned and styled */}
-         <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg" />
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg" />
+          {/* Manual and Auto Arrows */}
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg" />
+          <CarouselNext
+            ref={nextRef}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg"
+          />
         </Carousel>
       </div>
     </section>
