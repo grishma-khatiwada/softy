@@ -1,6 +1,6 @@
 import SoftyAdvantageSection from '@/components/Advantage'
 import { Category } from '@/components/Category'
-import FooterSection from '@/components/Footer'
+
 import { HeroSection } from '@/components/HeroSection'
 import React from 'react'
 
