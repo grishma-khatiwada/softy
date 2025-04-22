@@ -5,11 +5,11 @@ Tech Stack
 Next.js
 Tailwind CSS
 ShadCN UI
-React (under the hood)
+
 
 Highlights
 Fully responsive and mobile-friendly layout
 Reusable UI components using ShadCN
 Clean and accessible design structure
 <br>
-Author-Grishma (Khatiwada) (Mern stack)
+Author-Grishma (Khatiwada) 
